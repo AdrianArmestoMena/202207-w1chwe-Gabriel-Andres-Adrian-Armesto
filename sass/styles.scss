@@ -1,3 +1,11 @@
-header {
-  display: flex;
+@use "colors";
+@use "substyles/titles.scss";
+* {
+  box-sizing: border-box;
+}
+html {
+  font-family: "Poppins", sans-serif;
+}
+body {
+  margin: 0;
 }
