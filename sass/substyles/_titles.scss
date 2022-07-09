@@ -1,0 +1,4 @@
+@mixin title($dimension, $color) {
+  color: $color;
+  font-size: $dimension;
+} ;
