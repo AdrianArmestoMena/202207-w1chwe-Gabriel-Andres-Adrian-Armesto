@@ -1,8 +1,9 @@
-@use "substyles/colors.scss";
-@use "substyles/titles.scss";
-@use "substyles/font-sizes";
-@use "substyles/forms";
-
+@use "./variables/colors";
+@use "./mixins/titles";
+@use "./variables/font-sizes";
+@use "./mixins/forms";
+@use "./partials/header";
+@use "./partials/deals";
 * {
   box-sizing: border-box;
 }
@@ -19,65 +20,4 @@ html {
 }
 body {
   margin: 0;
-}
-ul {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-a {
-  color: black;
-  margin: 0;
-}
-.fa-solid,
-.fa-bars .header {
-  width: 28px;
-  font-size: 20px;
-  color: colors.$titles-color;
-}
-
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding-left: 7vw;
-  &__title {
-    @include titles.title(font-sizes.$h1-size, colors.$titles-color, 20px);
-    font-weight: 700;
-  }
-}
-.deals-form-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.deals-form-container__title {
-  @include titles.title(font-sizes.$h2-size, colors.$h2-color, 30px);
-}
-.deals-form__input-container {
-  @include forms.input-container();
-  margin-top: 20px;
-}
-.deals-form {
-  @include forms.form();
-}
-.deals-form__button {
-  @include forms.input-button(90%, 55px, #ed2e7e, white, 16px, 40px);
-}
-.deals-form__input {
-  @include forms.input-button(90%, 55px, #f7f7fc, #14142b, 16px, 16px);
-}
-@media (min-width: 900px) {
-  .deals-form {
-    flex-direction: row;
-  }
-  .deals-form-container__title-container {
-    display: flex;
-    width: 90%;
-    padding-left: 0;
-    justify-content: flex-start;
-  }
-  .deals-form-container__title {
-    align-self: flex-start;
-  }
 }
