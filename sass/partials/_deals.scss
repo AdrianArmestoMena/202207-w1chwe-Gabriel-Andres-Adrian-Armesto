@@ -1,4 +1,4 @@
-@use "../variables/colors";
+@use "../variables/colors.scss";
 @use "../mixins/titles.scss";
 @use "../variables/font-sizes";
 @use "../mixins/forms";
@@ -18,7 +18,15 @@
   @include forms.form();
 }
 .deals-form__button {
-  @include forms.input-button(90%, 55px, #ed2e7e, white, 16px, 40px);
+  @include forms.input-button(
+    90%,
+    55px,
+    colors.$color-button,
+    white,
+    16px,
+    40px
+  );
+  border: none;
 }
 .deals-form__input {
   @include forms.input-button(90%, 55px, #f7f7fc, #14142b, 16px, 16px);
