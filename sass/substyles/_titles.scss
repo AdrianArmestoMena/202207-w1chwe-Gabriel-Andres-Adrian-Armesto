@@ -1,4 +1,5 @@
-@mixin title($dimension, $color) {
+@mixin title($dimension, $color, $padding) {
   color: $color;
   font-size: $dimension;
+  padding: $padding;
 } ;
