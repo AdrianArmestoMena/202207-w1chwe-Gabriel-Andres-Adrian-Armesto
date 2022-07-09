@@ -1,0 +1,66 @@
+@use "../mixins/forms";
+@use "../variables/colors";
+@use "../variables/font-sizes";
+@use "../mixins/titles";
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-form-section {
+  background-color: colors.$background-dark;
+  border-radius: 17px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+  margin: 10px;
+  &__title {
+    @include titles.title(24px, #bca4ff, 5px);
+    margin-left: 20px;
+  }
+  &__title-container {
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+  }
+}
+
+.main-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  &__div {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
+  &__main-input {
+    @include forms.input-button(
+      90%,
+      55px,
+      colors.$low-grey,
+      #f3efff,
+      16px,
+      20px
+    );
+  }
+  &__main-button {
+    @include forms.input-button(
+      90%,
+      55px,
+      colors.$color-button,
+      #f3efff,
+      16px,
+      40px
+    );
+    border: none;
+  }
+}

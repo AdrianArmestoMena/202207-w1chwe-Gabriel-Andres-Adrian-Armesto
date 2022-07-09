@@ -1,10 +1,7 @@
-@use "./variables/colors";
-@use "./mixins/titles";
-@use "./variables/font-sizes";
-@use "./mixins/forms";
 @use "./partials/header";
 @use "./partials/deals";
 @use "./partials/articles";
+@use "./partials/searching";
 * {
   box-sizing: border-box;
 }
