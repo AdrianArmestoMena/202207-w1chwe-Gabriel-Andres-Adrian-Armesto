@@ -1,0 +1,46 @@
+@use "../variables/colors";
+@use "../variables/font-sizes";
+@use "../mixins/forms";
+
+.main-serch-section__properties-found {
+  align-items: center;
+  margin: 10px 30px;
+}
+.properties-found__images-container {
+  display: flex;
+  height: 250px;
+  width: 250px;
+}
+.main-search-section__tittle-article {
+  color: colors.$titles-color;
+  font-size: font-sizes.$h2-size;
+}
+.information-list__information-item {
+  color: colors.$content-articles-color;
+  &.map-link {
+    color: colors.$titles-color;
+  }
+}
+
+.properties-found__rating-stars {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  margin: 20px 0px;
+}
+.container-for-booking-button {
+  display: flex;
+  flex-direction: row;
+}
+.make-booking {
+  @include forms.input-button(20%, 32px, white, #5f2eea, 16px, 40px);
+  color: colors.$titles-color;
+  margin: 20px 0px;
+  font-weight: bold;
+  border-color: colors.$content-articles-color;
+}
+
+.fa-solid {
+  width: 15px;
+  font-size: 15px;
+}

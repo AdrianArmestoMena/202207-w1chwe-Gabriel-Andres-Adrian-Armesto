@@ -1,5 +1,6 @@
 @use "./partials/header";
 @use "./partials/deals";
+@use "./partials/articles";
 @use "./partials/searching";
 * {
   box-sizing: border-box;
@@ -17,4 +18,11 @@ html {
 }
 body {
   margin: 0;
+}
+a {
+  color: inherit;
+  text-decoration: inherit;
+}
+img {
+  border-radius: 30px;
 }
