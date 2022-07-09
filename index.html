@@ -29,31 +29,43 @@
     </header>
     <div></div>
     <section class="deals-form-container">
-      <h2>Find deals on hotels, homes and much more...</h2>
+      <div>
+        <h2 class="deals-form-container__title">
+          Find deals on hotels, homes and much more...
+        </h2>
+      </div>
       <form method="get" class="deals-form">
-        <input
-          class="deals-form-where"
-          type="text"
-          name="place"
-          id="place"
-          required
-        />
-
-        <input
-          class="deals-form__dates"
-          type="date"
-          name="date"
-          id="date-deals-form"
-        />
-
-        <input
-          class="deals-form-people"
-          type="number"
-          name="email"
-          id="email"
-        />
-
-        <input type="submit" value="Search" />
+        <div class="deals-form__input-container">
+          <input
+            placeholder="Where are you going?"
+            class="deals-form__input deals-form__input--where"
+            type="text"
+            name="place"
+            id="place"
+            required
+          />
+        </div>
+        <div class="deals-form__input-container">
+          <input
+            placeholder="Check-in - Check-out"
+            class="deals-form__input deals-form__input--date"
+            type="date"
+            name="date"
+            id="date-deals-form"
+          />
+        </div>
+        <div class="deals-form__input-container">
+          <input
+            placeholder="2 adults - 0 childres"
+            class="deals-form__input deals-form__input--people"
+            type="number"
+            name="email"
+            id="email"
+          />
+        </div>
+        <div class="deals-form__input-container">
+          <input class="deals-form__button" type="submit" value="Search" />
+        </div>
       </form>
     </section>
   </body>

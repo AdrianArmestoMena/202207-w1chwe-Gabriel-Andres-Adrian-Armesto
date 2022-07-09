@@ -1,0 +1,22 @@
+@mixin form() {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+}
+
+@mixin input-button($width, $height, $backgroung, $color, $font-size, $radius) {
+  width: $width;
+  height: $height;
+  background-color: $backgroung;
+  color: $color;
+  font-size: $font-size;
+  border-radius: $radius;
+}
+@mixin input-container {
+  margin: 5px, 10px;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 5px, 10px;
+}
