@@ -1,15 +1,22 @@
 @use "../variables/colors";
 @use "../variables/font-sizes";
 @use "../mixins/forms";
-
+.main-content__main-search-section {
+  display: flex;
+  flex-direction: column;
+}
 .main-serch-section__properties-found {
   align-items: center;
   margin: 10px 30px;
+  width: 90vw;
+  border-bottom: solid rgb(217, 219, 233);
 }
 .properties-found__images-container {
   display: flex;
-  height: 250px;
-  width: 250px;
+  width: 90%;
+  margin: 10px;
+  align-items: center;
+  gap: 7%;
 }
 .main-search-section__tittle-article {
   color: colors.$titles-color;
@@ -38,9 +45,13 @@
   margin: 20px 0px;
   font-weight: bold;
   border-color: colors.$content-articles-color;
+  justify-content: center;
 }
 
 .fa-solid {
   width: 15px;
   font-size: 15px;
+}
+.images-container__next-imagine {
+  overflow: hidden;
 }
