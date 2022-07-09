@@ -1,0 +1,39 @@
+@use "../variables/colors";
+@use "../mixins/titles.scss";
+@use "../variables/font-sizes";
+@use "../mixins/forms";
+.deals-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.deals-form-container__title {
+  @include titles.title(font-sizes.$h2-size, colors.$h2-color, 30px);
+}
+.deals-form__input-container {
+  @include forms.input-container();
+  margin-top: 20px;
+}
+.deals-form {
+  @include forms.form();
+}
+.deals-form__button {
+  @include forms.input-button(90%, 55px, #ed2e7e, white, 16px, 40px);
+}
+.deals-form__input {
+  @include forms.input-button(90%, 55px, #f7f7fc, #14142b, 16px, 16px);
+}
+@media (min-width: 900px) {
+  .deals-form {
+    flex-direction: row;
+  }
+  .deals-form-container__title-container {
+    display: flex;
+    width: 90%;
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+  .deals-form-container__title {
+    align-self: flex-start;
+  }
+}
