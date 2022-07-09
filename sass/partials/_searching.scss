@@ -17,6 +17,7 @@
   align-items: center;
   width: 90%;
   margin: 10px;
+  padding: 20px 0;
   &__title {
     @include titles.title(24px, #bca4ff, 5px);
     margin-left: 20px;
@@ -62,5 +63,9 @@
       40px
     );
     border: none;
+  }
+  &__main-input-label {
+    align-self: flex-start;
+    margin-left: 20px;
   }
 }
