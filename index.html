@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="multimedia/favicon.ico" type="image/x-icon" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
@@ -27,5 +28,62 @@
         <i class="fa-solid fa-bars"></i>
       </a>
     </header>
+    <main class="main-content">
+      <form class="main-content__main-form">
+        <h3 class="main-form__serch-span">Search</h3>
+        <div class="main-form__div-for-inputs">
+          <label
+            for="input-label__destination"
+            class="main-form__main-input-label"
+            >Destination/property Name</label
+          >
+          <input
+            type="text"
+            class="main-form__main-input"
+            id="input-label__destination"
+            type="text"
+            placeholder="Gold Coast"
+          />
+          <label for="input-label__check-in" class="main-form__main-input-label"
+            >Check-in Date</label
+          >
+          <input
+            type="text"
+            class="main-form__main-input"
+            id="input-label__check-in"
+            placeholder="Check-in date"
+          />
+          <label
+            for="input-label__check-out"
+            class="main-form__main-input-label"
+            >Check-out Date</label
+          >
+          <input
+            type="text"
+            class="main-form__main-input"
+            id="input-label__check-out"
+            placeholder="Check-out date"
+          />
+          <label
+            for="input-label__travellers"
+            class="main-form__main-input-label"
+            >Travellers</label
+          >
+          <input
+            type="text"
+            class="main-form__main-input"
+            id="input-label__travellers"
+            placeholder="2 adults - 0 children"
+          />
+        </div>
+        <button class="main-form__serch-button" type="submit">Search</button>
+      </form>
+      <section class="main-content__main-search-section">
+        <h2 class="main-serch-section__title">254 Properties Found</h2>
+        <article class="main-serch-section__properties-found">
+          <img src="" alt="" />
+        </article>
+      </section>
+    </main>
   </body>
 </html>
