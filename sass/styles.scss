@@ -62,3 +62,17 @@ a {
 .deals-form__input {
   @include forms.input-button(90%, 55px, #f7f7fc, #14142b, 16px, 16px);
 }
+@media (min-width: 900px) {
+  .deals-form {
+    flex-direction: row;
+  }
+  .deals-form-container__title-container {
+    display: flex;
+    width: 90%;
+    padding-left: 0;
+    justify-content: flex-start;
+  }
+  .deals-form-container__title {
+    align-self: flex-start;
+  }
+}
