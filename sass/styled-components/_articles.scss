@@ -5,7 +5,9 @@
   display: flex;
   flex-direction: column;
 }
-
+.main-content__title {
+  padding-left: 30px;
+}
 @media (min-width: 900px) {
   .main-content__main-search-section {
     position: relative;
