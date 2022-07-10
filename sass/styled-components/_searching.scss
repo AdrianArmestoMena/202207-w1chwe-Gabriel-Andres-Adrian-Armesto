@@ -19,7 +19,7 @@
   margin: 10px;
   padding: 20px 0;
   &__title {
-    @include titles.title(24px, #bca4ff, 5px);
+    @include titles.title(24px, colors.$soft-purple, 5px);
     margin-left: 20px;
   }
   &__title-container {
