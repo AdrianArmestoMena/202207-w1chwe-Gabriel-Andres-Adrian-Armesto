@@ -2,6 +2,7 @@
 @use "../mixins/titles.scss";
 @use "../variables/font-sizes";
 @use "../mixins/forms";
+
 .deals-form-container {
   display: flex;
   flex-direction: column;
@@ -48,4 +49,10 @@
   .deals-form-container__title {
     padding-left: 1vw;
   }
+}
+
+.forms-separator {
+  background: colors.$soft-purple;
+  height: 1px;
+  margin: 50px 0 40px 0;
 }
