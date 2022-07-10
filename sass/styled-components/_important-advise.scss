@@ -1,0 +1,17 @@
+@use "../mixins/advises";
+.important-advise {
+  @include advises.advise(#ed2e7e, #fff3f8);
+  &__important-icon {
+    flex: 1;
+    margin-left: 15px;
+    margin-top: 20px;
+    align-self: flex-start;
+  }
+  &__content {
+    flex: 5;
+  }
+  &__exit-button {
+    flex: 1;
+    margin-right: 10px;
+  }
+}
