@@ -31,7 +31,8 @@
     flex: 1;
   }
   .properties-found__images-container img {
-    width: 268px;
+    width: 90%;
+    min-width: 275px;
   }
 }
 .properties-found__images-container {
