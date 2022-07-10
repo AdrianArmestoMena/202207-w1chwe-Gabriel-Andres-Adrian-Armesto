@@ -2,13 +2,18 @@
 @use "../mixins/titles.scss";
 @use "../variables/font-sizes";
 @use "../mixins/forms";
+
 .deals-form-container {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .deals-form-container__title {
-  @include titles.title(font-sizes.$h2-size, colors.$h2-color, 30px);
+  @include titles.title(
+    font-sizes.$h2-size,
+    colors.$h2-color,
+    60px 10vw 15px 10vw
+  );
 }
 .deals-form__input-container {
   @include forms.input-container();
@@ -31,7 +36,7 @@
 .deals-form__input {
   @include forms.input-button(90%, 55px, #f7f7fc, #14142b, 16px, 16px);
 }
-@media (min-width: 900px) {
+@media (min-width: 714px) {
   .deals-form {
     flex-direction: row;
   }
@@ -42,6 +47,12 @@
     justify-content: flex-start;
   }
   .deals-form-container__title {
-    align-self: flex-start;
+    padding-left: 1vw;
   }
+}
+
+.forms-separator {
+  background: colors.$soft-purple;
+  height: 1px;
+  margin: 50px 0 40px 0;
 }
