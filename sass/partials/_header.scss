@@ -21,10 +21,13 @@ a {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 7vw;
   &__title {
     @include titles.title(font-sizes.$h1-size, colors.$titles-color, 20px);
     font-weight: 700;
+    margin-left: 4vw;
+  }
+  &__menu-link {
+    padding-right: 25px;
   }
 }
 
