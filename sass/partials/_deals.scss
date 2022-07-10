@@ -36,7 +36,7 @@
 .deals-form__input {
   @include forms.input-button(90%, 55px, #f7f7fc, #14142b, 16px, 16px);
 }
-@media (min-width: 900px) {
+@media (min-width: 714px) {
   .deals-form {
     flex-direction: row;
   }
