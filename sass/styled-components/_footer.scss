@@ -1,0 +1,47 @@
+@use "../variables/colors";
+@use "../variables/font-sizes";
+@use "../mixins/forms";
+
+.footer-contac-information__contact-display {
+  margin: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(76, 30, 208);
+  border-radius: 30px;
+  height: 45vh;
+  width: 90vw;
+  justify-content: center;
+  margin: 20px auto;
+  min-width: 200px;
+}
+.contact-display__contact-us {
+  @include forms.input-button(160px, 25px, inherit, #5f2eea, 12px, 40px);
+  color: white;
+  margin: 20px 0px;
+  font-weight: 100;
+  border-color: white;
+  border-width: 1px;
+}
+.contact-display__more-information {
+  color: white;
+  margin: 10px 10px 0px 20px;
+  font-size: 35px;
+  font-weight: normal;
+  font-weight: bold;
+  text-align: center;
+}
+.footer-contac-information__related-information {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.related-information__main-information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.related-information__title {
+  color: colors.$titles-color;
+  font-size: font-sizes.$h2-size;
+}
