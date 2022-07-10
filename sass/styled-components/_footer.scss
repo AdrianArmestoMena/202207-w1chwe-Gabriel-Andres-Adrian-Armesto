@@ -35,11 +35,14 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 90%;
+  margin: 20px auto;
 }
 @media (min-width: 900px) {
   .footer-contac-information__related-information {
     flex-direction: row;
     gap: 10%;
+    align-items: flex-start;
     .related-information__main-information {
       align-items: flex-start;
       .related-information__title {
@@ -73,7 +76,8 @@
 }
 .related-information__copyright {
   text-align: center;
-  color: colors.$content-articles-color;
+  color: black;
+  font-weight: 600;
 }
 .related-information__contact-data {
   display: flex;
@@ -109,5 +113,26 @@
   }
   .contact-data__telephone-number {
     text-align: justify;
+  }
+}
+.related-information__services-information,
+.related-information__continents-information {
+  display: none;
+  h3 {
+    margin: 0 0 15px 0;
+  }
+  a {
+    line-height: 40px;
+    font-weight: 400;
+    color: colors.$content-articles-color;
+    text-align: justify;
+    font-size: 14px;
+  }
+}
+@media (min-width: 900px) {
+  .related-information__services-information,
+  .related-information__continents-information {
+    display: flex;
+    flex-direction: column;
   }
 }
