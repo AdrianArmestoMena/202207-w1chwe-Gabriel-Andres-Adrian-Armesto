@@ -35,13 +35,104 @@
   display: flex;
   align-items: center;
   flex-direction: column;
+  width: 90%;
+  margin: 20px auto;
+}
+@media (min-width: 900px) {
+  .footer-contac-information__related-information {
+    flex-direction: row;
+    gap: 10%;
+    align-items: flex-start;
+    .related-information__main-information {
+      align-items: flex-start;
+      .related-information__title {
+        text-align: justify;
+      }
+      .related-information__information-text {
+        text-align: justify;
+      }
+      .related-information__copyright {
+        text-align: justify;
+      }
+    }
+  }
 }
 .related-information__main-information {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 90vw;
+  margin-bottom: 30px;
 }
+
 .related-information__title {
   color: colors.$titles-color;
   font-size: font-sizes.$h2-size;
+}
+.related-information__information-text {
+  text-align: center;
+  color: colors.$content-articles-color;
+  line-height: 28px;
+}
+.related-information__copyright {
+  text-align: center;
+  color: black;
+  font-weight: 600;
+}
+.related-information__contact-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .contact-data__contact-email {
+    color: colors.$titles-color;
+    margin: 15px 0 0 0;
+  }
+  .contact-data__adress {
+    text-align: center;
+    line-height: 28px;
+    color: colors.$content-articles-color;
+  }
+  .contact-data__telephone-number {
+    text-align: center;
+    line-height: 28px;
+    color: colors.$content-articles-color;
+  }
+}
+@media (min-width: 900px) {
+  .related-information__contact-data {
+    align-items: flex-start;
+    .contact-data__title {
+      text-align: justify;
+    }
+    .contact-data__contact-email {
+      text-align: justify;
+    }
+    .contact-data__adress {
+      text-align: justify;
+    }
+  }
+  .contact-data__telephone-number {
+    text-align: justify;
+  }
+}
+.related-information__services-information,
+.related-information__continents-information {
+  display: none;
+  h3 {
+    margin: 0 0 15px 0;
+  }
+  a {
+    line-height: 40px;
+    font-weight: 400;
+    color: colors.$content-articles-color;
+    text-align: justify;
+    font-size: 14px;
+  }
+}
+@media (min-width: 900px) {
+  .related-information__services-information,
+  .related-information__continents-information {
+    display: flex;
+    flex-direction: column;
+  }
 }
