@@ -25,14 +25,16 @@
     display: flex;
   }
   .properties-found__text-container {
-    flex: 2;
+    height: 100%;
+    max-width: 362px;
+    align-self: flex-start;
   }
   .properties-found__images-container {
-    flex: 1;
+    max-width: 478px;
   }
   .properties-found__images-container img {
     width: 90%;
-    min-width: 275px;
+    max-width: 268px;
   }
 }
 .properties-found__images-container {
@@ -71,8 +73,17 @@
   font-weight: bold;
   border-color: colors.$content-articles-color;
 }
-
 .fa-solid {
   width: 15px;
   font-size: 15px;
+}
+@media (min-width: 900px) {
+  .make-booking {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .properties-found__text-container {
+    position: relative;
+  }
 }
