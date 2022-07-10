@@ -69,3 +69,27 @@
     margin-left: 20px;
   }
 }
+@media (min-width: 900px) {
+  .main-content {
+    display: flex;
+    flex-direction: row;
+    width: 90%;
+    &__main-search-section {
+      flex: 1;
+    }
+  }
+  .search-form-section {
+    flex: 2;
+    align-self: flex-start;
+  }
+  .properties-found__images-container {
+    display: flex;
+    width: 90%;
+    margin: 10px;
+    align-items: center;
+    gap: 7%;
+  }
+  .images-container__next-imagine {
+    display: none;
+  }
+}
