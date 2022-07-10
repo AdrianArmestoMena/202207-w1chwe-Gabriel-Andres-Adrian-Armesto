@@ -8,7 +8,7 @@
 .main-content__title {
   padding-left: 30px;
 }
-@media (min-width: 900px) {
+@media (min-width: 1071px) {
   .main-content__main-search-section {
     position: relative;
   }
@@ -21,7 +21,7 @@
   width: 90%;
   border-bottom: solid rgb(217, 219, 233);
 }
-@media (min-width: 900px) {
+@media (min-width: 1071px) {
   .main-serch-section__properties-found {
     display: flex;
   }
@@ -78,7 +78,7 @@
   width: 15px;
   font-size: 15px;
 }
-@media (min-width: 900px) {
+@media (min-width: 1071px) {
   .make-booking {
     position: absolute;
     right: 0;
