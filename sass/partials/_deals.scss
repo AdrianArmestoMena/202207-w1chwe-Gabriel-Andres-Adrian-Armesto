@@ -8,7 +8,11 @@
   align-items: center;
 }
 .deals-form-container__title {
-  @include titles.title(font-sizes.$h2-size, colors.$h2-color, 30px);
+  @include titles.title(
+    font-sizes.$h2-size,
+    colors.$h2-color,
+    60px 10vw 15px 10vw
+  );
 }
 .deals-form__input-container {
   @include forms.input-container();
@@ -42,6 +46,6 @@
     justify-content: flex-start;
   }
   .deals-form-container__title {
-    align-self: flex-start;
+    padding-left: 1vw;
   }
 }
