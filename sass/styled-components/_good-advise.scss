@@ -1,6 +1,7 @@
 @use "../mixins/advises";
 .nice-advise {
   @include advises.advise(#00ba88, #f2fffb);
+  border: solid 1px #00ba88;
   &__hand-icon {
     flex: 1;
     margin-left: 15px;

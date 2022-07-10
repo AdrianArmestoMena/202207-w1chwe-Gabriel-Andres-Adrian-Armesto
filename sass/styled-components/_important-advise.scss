@@ -1,6 +1,7 @@
 @use "../mixins/advises";
 .important-advise {
   @include advises.advise(#ed2e7e, #fff3f8);
+  border: solid 1px #ed2e7e;
   &__important-icon {
     flex: 1;
     margin-left: 15px;
