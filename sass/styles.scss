@@ -1,7 +1,9 @@
-@use "./partials/header";
-@use "./partials/deals";
-@use "./partials/articles";
-@use "./partials/searching";
+@use "./styled-components/header";
+@use "./styled-components/deals";
+@use "./styled-components/articles";
+@use "./styled-components/searching";
+@use "./styled-components/good-advise";
+@use "./styled-components/important-advise";
 * {
   box-sizing: border-box;
 }
