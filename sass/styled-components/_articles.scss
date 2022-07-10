@@ -5,7 +5,9 @@
   display: flex;
   flex-direction: column;
 }
-
+.main-content__title {
+  padding-left: 30px;
+}
 @media (min-width: 900px) {
   .main-content__main-search-section {
     position: relative;
@@ -15,8 +17,22 @@
 .main-serch-section__properties-found {
   align-items: center;
   margin: 10px 30px;
-  width: 90vw;
+  width: 90%;
   border-bottom: solid rgb(217, 219, 233);
+}
+@media (min-width: 900px) {
+  .main-serch-section__properties-found {
+    display: flex;
+  }
+  .properties-found__text-container {
+    flex: 2;
+  }
+  .properties-found__images-container {
+    flex: 1;
+  }
+  .properties-found__images-container img {
+    width: 268px;
+  }
 }
 .properties-found__images-container {
   display: flex;
