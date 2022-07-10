@@ -9,3 +9,7 @@
   margin: 0 auto;
   justify-content: space-between;
 }
+@mixin exit-button {
+  background: none;
+  border: none;
+}
