@@ -1,10 +1,4 @@
+@use "../mixins/advises";
 .nice-advise {
-  width: 90%;
-  background-color: #fff3f8;
-  color: #ed2e7e;
-  font-size: 14px;
-  border-radius: 20px;
-  display: flex;
-  align-items: center;
-  margin: 0 auto;
+  @include advises.advise(#ed2e7e, #fff3f8);
 }
