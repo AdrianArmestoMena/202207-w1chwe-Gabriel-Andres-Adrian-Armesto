@@ -1,0 +1,4 @@
+@use "../mixins/advises";
+.important-advise {
+  @include advises.advise(#ed2e7e, #fff3f8);
+}
