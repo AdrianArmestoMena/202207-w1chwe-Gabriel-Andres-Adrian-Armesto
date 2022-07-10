@@ -22,6 +22,7 @@
   display: flex;
   width: 90%;
   margin: 10px;
+  overflow: scroll;
   align-items: center;
   gap: 7%;
 }
@@ -57,8 +58,4 @@
 .fa-solid {
   width: 15px;
   font-size: 15px;
-}
-.images-container__next-imagine {
-  overflow: hidden;
-  min-width: 90%;
 }
