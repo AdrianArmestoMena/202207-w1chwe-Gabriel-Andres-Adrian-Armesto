@@ -20,6 +20,20 @@
   width: 90%;
   border-bottom: solid rgb(217, 219, 233);
 }
+@media (min-width: 900px) {
+  .main-serch-section__properties-found {
+    display: flex;
+  }
+  .properties-found__text-container {
+    flex: 2;
+  }
+  .properties-found__images-container {
+    flex: 1;
+  }
+  .properties-found__images-container img {
+    width: 268px;
+  }
+}
 .properties-found__images-container {
   display: flex;
   width: 90%;
