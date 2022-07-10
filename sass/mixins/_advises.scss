@@ -1,0 +1,10 @@
+@mixin advise($color, $backgroung) {
+  width: 90%;
+  background-color: $backgroung;
+  color: $color;
+  font-size: 14px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+}
