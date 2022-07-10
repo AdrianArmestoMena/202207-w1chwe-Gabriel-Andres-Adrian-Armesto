@@ -5,6 +5,13 @@
   display: flex;
   flex-direction: column;
 }
+
+@media (min-width: 900px) {
+  .main-content__main-search-section {
+    position: relative;
+  }
+}
+
 .main-serch-section__properties-found {
   align-items: center;
   margin: 10px 30px;
@@ -40,12 +47,11 @@
   flex-direction: row;
 }
 .make-booking {
-  @include forms.input-button(20%, 32px, white, #5f2eea, 16px, 40px);
+  @include forms.input-button(135px, 32px, white, #5f2eea, 16px, 40px);
   color: colors.$titles-color;
   margin: 20px 0px;
   font-weight: bold;
   border-color: colors.$content-articles-color;
-  justify-content: center;
 }
 
 .fa-solid {
@@ -54,4 +60,5 @@
 }
 .images-container__next-imagine {
   overflow: hidden;
+  min-width: 90%;
 }
